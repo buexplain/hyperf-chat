@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    margin: 5% auto 0 auto;
+    width: 802px;
+    height: 602px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.left {
+    width: 200px;
+    height: 600px;
+    overflow: auto;
+    border-right: 1px solid #ccc;
+}
+
+.right {
+    flex-grow: 1;
+    width: 600px;
+}
+
+.left .tool {
+    padding-left: 5px;
+    padding-top: 5px;
+    height: 26px;
+}
+
+.left .tool a {
+    margin-right: 5px;
+}
+
+.left .liaison {
+    height: 572px;
+    overflow: auto;
+    padding-left: 5px;
+}
+
+.left .liaison .session {
+    color: #0000EE;
+    cursor: pointer;
+    margin: 5px 0 5px 0;
+}
+
+.right .list {
+    height: 475px;
+    overflow: auto;
+    padding-left: 5px;
+}
+
+.right .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 5px 5px 5px;
+    height: 26px;
+}
+
+.right .header .manage a {
+    margin-left: 5px;
+}
+
+.right .list .message {
+    margin: 10px 0 10px 0;
+}
+
+.right .list .message .user {
+    font-size: 14px;
+    color: #ccc;
+}
+
+.right .send {
+    padding-left: 5px;
+    display: flex;
+    height: 100px;
+    align-items: center;
+    border-top: 1px solid #ccc;
+}
+
+.right .send .data {
+    width: 90%;
+    height: 100%;
+    overflow: auto;
+    outline: none;
+    padding: 5px 5px 5px 0;
+    border-right: 1px solid #ccc;
+}
+
+.right .send .btn {
+    flex-grow: 1;
+    text-align: center;
+    cursor: pointer;
+    color: #0000EE;
+    padding: 30px 0 30px 0;
+}
